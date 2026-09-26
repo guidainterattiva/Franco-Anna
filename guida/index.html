@@ -241,8 +241,8 @@
       </div>
     </div>
     
-    <div style="margin-top:24px;font-size:11px;color:rgba(245,237,216,.35);letter-spacing:.05em" class="it">Franco &amp; Anna · <a href="mailto:suitecoralbay@gmail.com" style="color:inherit">suitecoralbay@gmail.com</a></div>
-    <div style="margin-top:24px;font-size:11px;color:rgba(245,237,216,.35);letter-spacing:.05em" class="en">Franco &amp; Anna · <a href="mailto:suitecoralbay@gmail.com" style="color:inherit">suitecoralbay@gmail.com</a></div>
+    <div style="margin-top:24px;font-size:11px;color:rgba(245,237,216,.35);letter-spacing:.05em" class="it">Franco &amp; Anna · <a href="/cdn-cgi/l/email-protection#eb989e829f8e8884998a87898a92ab8c868a8287c5888486" style="color:inherit"><span class="__cf_email__" data-cfemail="cdbeb8a4b9a8aea2bfaca1afacb48daaa0aca4a1e3aea2a0">[email&#160;protected]</span></a></div>
+    <div style="margin-top:24px;font-size:11px;color:rgba(245,237,216,.35);letter-spacing:.05em" class="en">Franco &amp; Anna · <a href="/cdn-cgi/l/email-protection#87f4f2eef3e2e4e8f5e6ebe5e6fec7e0eae6eeeba9e4e8ea" style="color:inherit"><span class="__cf_email__" data-cfemail="2c5f594558494f435e4d404e4d556c4b414d4540024f4341">[email&#160;protected]</span></a></div>
   </div>
 </div>
 
@@ -588,11 +588,11 @@ Un'esperienza emozionante tra le dune dorate del deserto, con adrenalina, cultur
           <span class="btn-value">+20 114 2715408</span>
         </span>
       </a>
-      <a href="mailto:suitecoralbay@gmail.com" class="cta-btn gold" style="margin-top:10px" target="_blank">
+      <a href="/cdn-cgi/l/email-protection#cdbeb8a4b9a8aea2bfaca1afacb48daaa0aca4a1e3aea2a0" class="cta-btn gold" style="margin-top:10px" target="_blank">
         <span class="btn-icon">📧</span>
         <span class="btn-text">
           <span class="btn-label">Email</span>
-          <span class="btn-value">suitecoralbay@gmail.com</span>
+          <span class="btn-value"><span class="__cf_email__" data-cfemail="6f1c1a061b0a0c001d0e030d0e162f08020e0603410c0002">[email&#160;protected]</span></span>
         </span>
       </a>
       <a href="https://wa.me/201004382318" class="cta-btn teal" target="_blank">
@@ -628,6 +628,22 @@ Un'esperienza emozionante tra le dune dorate del deserto, con adrenalina, cultur
             <span class="btn-value">Facebook · Sharm Sunset Company</span>
           </span>
         </a>
+        <a href="https://www.instagram.com/sharm_sunset_company?stkn=MTB4NzRqZ241MzI2MA==" target="_blank" class="cta-btn" style="background:linear-gradient(135deg,#833ab4,#fd1d1d,#fcb045);margin-top:10px">
+          <span class="btn-icon">📸</span>
+          <span class="btn-text">
+            <span class="btn-label it">Seguici su Instagram</span>
+            <span class="btn-label en">Follow us on Instagram</span>
+            <span class="btn-value">@sharm_sunset_company</span>
+          </span>
+        </a>
+        <a href="https://www.tiktok.com/@sharmsunsetcompany?_r=1&_t=ZN-99b5ym6haOk" target="_blank" class="cta-btn" style="background:#010101;margin-top:10px">
+          <span class="btn-icon">🎵</span>
+          <span class="btn-text">
+            <span class="btn-label it">Seguici su TikTok</span>
+            <span class="btn-label en">Follow us on TikTok</span>
+            <span class="btn-value">@sharmsunsetcompany</span>
+          </span>
+        </a>
       </div>
     </div>
 
@@ -645,7 +661,7 @@ Un'esperienza emozionante tra le dune dorate del deserto, con adrenalina, cultur
   </div><!-- /guide-wrap -->
 </div><!-- /guide -->
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 // Room configs
 var ROOMS = {
   harem: {
@@ -756,22 +772,25 @@ function openMap() {
   mapScale = 1;
   var overlay = document.getElementById('mapOverlay');
   var img = document.getElementById('mapZoomImg');
-  if(overlay) overlay.classList.add('open');
   if(img) img.style.transform = 'scale(1)';
+  if(overlay) overlay.classList.add('open');
+  document.body.style.overflow = 'hidden';
 }
 
 function closeMap() {
   var overlay = document.getElementById('mapOverlay');
   if(overlay) overlay.classList.remove('open');
-  mapScale = 1;
+  document.body.style.overflow = '';
 }
 
 function zoomMap(factor) {
-  mapScale = mapScale * factor;
-  mapScale = Math.min(Math.max(mapScale, 0.5), 4);
+  mapScale = Math.min(Math.max(mapScale * factor, 0.5), 4);
   var img = document.getElementById('mapZoomImg');
   if(img) img.style.transform = 'scale(' + mapScale + ')';
 }
+
+// Init lang
+setLang('it');
 </script>
 </body>
 </html>
